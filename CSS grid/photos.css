@@ -1,0 +1,38 @@
+/* img {width: 30%; float: left; margin: 1.66%;} */
+
+p {
+  font-family: Raleway;
+  margin-left: 1.66%;
+  font-size: 23px;
+  font-weight: 800;
+  border-bottom: 2px solid #d1d1d1;
+  width: 96.5%;
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr 1fr);
+  grid-template-areas: 'item1 item2 item3';
+}
+
+.wrapper div {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .wrapper{
+  grid-template-columns: repeat(1fr 1fr);
+  grid-template-areas: 'item1 item2';
+}
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    grid-template-areas: 'item1'
+  }
+}
