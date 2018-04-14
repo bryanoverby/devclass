@@ -42,9 +42,19 @@ h3 {
     color: white;
 }
 
+.invidrop {
+    display: none;
+}
+
 
 @media (max-width: 992px) {
     .navcontainer {
+        display: block;
+    }
+    .section2 {
+        display: none;
+    }
+    .invidrop {
         display: block;
     }
 }
