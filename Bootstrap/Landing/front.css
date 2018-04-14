@@ -1,10 +1,50 @@
 #content {
     text-align: center;
     padding-top: 25%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 20px rgba(0,0,0,0.1);
 }
 
 body {
     background: url(http://www.cats.club/wp-content/uploads/2017/03/image_header_option.jpg);
     background-size: cover;
+    font-family: Lato;
 }
 
+html {
+    height: 100%;
+}
+
+.section1 {grid-area: nav2;}
+.section2 {grid-area: nav3;}
+
+.navcontainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas: 
+        'nav1 nav2 nav3 nav4';
+    background-color: #f8f9fa;
+}
+
+.section2 {
+    text-align: right;
+    margin-top: 15px;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+h3 {
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+    .navcontainer {
+        display: block;
+    }
+}
